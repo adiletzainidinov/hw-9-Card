@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { useState } from 'react';
+import styled from 'styled-components';
 
 const Nav = styled.nav`
   ul {
@@ -46,11 +47,11 @@ const Nav = styled.nav`
   }
 `;
 
-const Navigation = () => {
+const Navigation = ({ showCard }) => {
   return (
     <Nav>
       <ul>
-        <li>
+        <li onClick={showCard}>
           <a href="/">Users</a>
         </li>
         <li>

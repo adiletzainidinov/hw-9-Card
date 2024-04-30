@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
-const MainHeader = () => {
+const MainHeader = ({showCard}) => {
   return (
     <Header>
       <h1>A Typical Page</h1>
-      <Navigation />
+      <Navigation showCard={showCard} />
     </Header>
   );
 };
